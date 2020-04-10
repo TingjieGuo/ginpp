@@ -12,6 +12,8 @@ defaultcontentlanguage = "cn"
 disablePathToLower = true
 enableGitInfo = true
 
+googleAnalytics = "UA-154554405-1"
+
 # Needed for mermaid/katex shortcodes
 [markup]
 [markup.goldmark.renderer]
@@ -77,7 +79,7 @@ enableGitInfo = true
   # (Optional, default true) Enables search function with flexsearch,
   # Index is built on fly, therefore it might slowdown your website.
   # Configuration for indexing can be adjusted in i18n folder per language.
-  BookSearch = false
+  BookSearch = true
 
   # (Optional, default true) Enables comments template on pages
   # By default partals/docs/comments.html includes Disqus template
