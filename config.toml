@@ -3,7 +3,6 @@
 baseURL = 'https://ginpp.tingjieguo.com/'
 title = 'GINPP计划'
 theme = 'book'
-description = 'NONMEM安装教程'
 
 languageCode = "zh-cmn"
 defaultContentLanguage = "cn"
@@ -45,6 +44,8 @@ googleAnalytics = "UA-163338654-1"
 
 
 [params]
+  description = 'NONMEM安装教程'
+  keywords = "NONMEM,PsN,Pirana,安装,教程"
   # (Optional, default true) Controls table of contents visibility on right side of pages.
   # Start and end levels can be controlled with markup.tableOfContents setting.
   # You can also specify this parameter per page in front matter.
