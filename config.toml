@@ -5,14 +5,14 @@ title = 'GINPP计划'
 theme = 'book'
 description = 'NONMEM安装教程'
 
-languagecode = "cn"
-defaultcontentlanguage = "cn"
+languageCode = "zh-cmn"
+defaultContentLanguage = "cn"
 
 # Book configuration
 disablePathToLower = true
 enableGitInfo = true
 
-googleAnalytics = "UA-154554405-1"
+googleAnalytics = "UA-163338654-1"
 
 # Needed for mermaid/katex shortcodes
 [markup]
