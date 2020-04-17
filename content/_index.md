@@ -14,4 +14,4 @@ GINPP是“**G**uide for **I**nstalling **N**ONMEM, **P**sN, and **P**irana”�
 GINPP最初只是单纯的安装NONMEM、PsN和Pirana教程，随着近年的新技术不断涌现，我会逐步把一些新的与定量药理学相关的技术、软件分享出来。
 
 ## **- 关于本站**
-本站使用[Hugo](https://gohugo.io/) 编译，主题基于[Hugo Book](https://github.com/alex-shpak/hugo-book)，网站部署于[Netlify](https://www.netlify.com/)。
+本站使用[Hugo](https://gohugo.io/)编译，主题基于[Hugo Book](https://github.com/alex-shpak/hugo-book)，网站部署于[Netlify](https://www.netlify.com/)。
