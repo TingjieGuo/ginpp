@@ -5,6 +5,8 @@ title: "NONMEM的安装"
 
 <font style="font-size:2em">NONMEM的安装</font>
 
+*我在这里写了一个英文版的NONMEM在Mac上安装的非常简略的教程(https://tingjieguo.com/posts/nmmac/)，会佛系完善并更新中文版...*
+
 ## 1. NONMEM安装源文件
 &emsp;&emsp;在确认GCC安装成功后，我们就可以继续安装NONMEM了。NONMEM的安装看起来好像复杂一点，但只要按照步骤做，其实也不难。开始之前，我们需要认识NONMEM安装文件夹里的一些内容，如下图所示。
 

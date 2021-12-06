@@ -12,6 +12,7 @@ disablePathToLower = true
 enableGitInfo = true
 
 googleAnalytics = "UA-163338654-1"
+disqusShortname = "tingjieguo"
 
 # Needed for mermaid/katex shortcodes
 [markup]
