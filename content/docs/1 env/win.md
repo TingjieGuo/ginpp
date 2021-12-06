@@ -1,6 +1,6 @@
 ---
 weight: 1
-title: "Windows环境配置"
+title: "- Windows环境配置"
 ---
 <font style="font-size:2em">Windows操作系统的环境配置</font>  
 
@@ -27,7 +27,7 @@ title: "Windows环境配置"
 
 ## 2. 配置Perl环境
 ### 2.1 安装Perl解释器
-&emsp;&emsp;Perl常见的有ActiveState Perl和Strawberry Perl两大发行版，两个版本主要的使用区别是模块管理不同，但都不是很难。我过去使用ActiveState Perl比较多，它在Windows系统下使用ppm工具来管理Perl模块，但ppm的资源库在中国没有镜像，网络质量差的情况下容易出错；Strawberry Perl保持了Linux下的风格，采用cpan管理Perl模块，cpan在全球有丰富的镜像，在中国大陆也有10多个镜像，使用体验会好很多，但缺点是某些模块管理不够高效，忽略网络质量的情况下不如ppm快。刚刚发现PsN网站上推荐的是Strawberry Perl，但我接下来内容还是以ActiveState Perl为例，Strawberry Perl相关模块的安装可以参考[mac OS系统环境配置]({{< relref "/docs/env/mac" >}})。
+&emsp;&emsp;Perl常见的有ActiveState Perl和Strawberry Perl两大发行版，两个版本主要的使用区别是模块管理不同，但都不是很难。我过去使用ActiveState Perl比较多，它在Windows系统下使用ppm工具来管理Perl模块，但ppm的资源库在中国没有镜像，网络质量差的情况下容易出错；Strawberry Perl保持了Linux下的风格，采用cpan管理Perl模块，cpan在全球有丰富的镜像，在中国大陆也有10多个镜像，使用体验会好很多，但缺点是某些模块管理不够高效，忽略网络质量的情况下不如ppm快。刚刚发现PsN网站上推荐的是Strawberry Perl，但我接下来内容还是以ActiveState Perl为例，Strawberry Perl相关模块的安装可以参考[mac OS系统环境配置]({{< relref "/docs/1 env/mac" >}})。
 
 &emsp;&emsp;Perl也有许多版本，PsN官方要求Perl版本不低于5.10.1，[点此打开](https://www.activestate.com/products/perl/downloads/)ActiveState Perl官方下载地址。Perl的安装同样也很简单，下载之后按提示操作即可。安装好Perl之后，我们也可以测试一下安装是否成功，打开`cmd`，输入命令：`perl -v`，如果成功的话会显示类似下面的返回信息:
 

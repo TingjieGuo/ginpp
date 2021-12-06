@@ -1,6 +1,6 @@
 ---
 weight: 1
-title: "NONMEM的安装"
+title: "- NONMEM的安装"
 ---
 
 <font style="font-size:2em">NONMEM的安装</font>
