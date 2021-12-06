@@ -2,6 +2,7 @@
 title: 首页
 type: docs
 bookToC: false
+BookComments: false
 ---
 
 ## **- 什么是GINPP**
