@@ -40,7 +40,7 @@ disqusShortname = "ginpp"
 
 [[menu.after]]
   name = "关于作者"
-  url = "https://tingjieguo.com"
+  url = "https://tingjieguo.com/about"
   weight = 10
 
 
