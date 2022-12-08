@@ -37,11 +37,6 @@ disqusShortname = "ginpp"
 #   name = "Github"
 #   url = "https://github.com/alex-shpak/hugo-book"
 #   weight = 10
-
-# [[menu.after]]
-#   name = "其他文章"
-#   url = "https://tingjieguo.com/about"
-#   weight = 9
 [[menu.after]]
   name = "关于作者"
   url = "https://tingjieguo.com/about"
