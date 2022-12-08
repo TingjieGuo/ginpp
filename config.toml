@@ -4,7 +4,7 @@ baseURL = 'https://ginpp.tingjieguo.com/'
 title = 'GINPP计划'
 theme = 'hugo-book'
 
-languageCode = "zh-cmn"
+languageCode = "zh-cn"
 defaultContentLanguage = "cn"
 
 # Book configuration
