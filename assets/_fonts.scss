@@ -1,9 +1,13 @@
+@import url(https://cdn.jsdelivr.net/gh/tingjieguo/lxgw-bright-webfont/style.css);
+@import url(https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont/style.css);
+// @import url(https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont/style.css);
 // @import url(https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont/style.css);
-@import url(https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont/style.css);
 
 body {
   font-family:
-    "LXGW WenKai Lite",
+    "LXGW Bright",
+    "LXGW WenKai",
+    // "LXGW WenKai Lite",
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
@@ -14,8 +18,9 @@ body {
 }
 
 code {
-  font-family: 
-    "LXGW WenKai Mono Lite",
+  font-family:
+    // "LXGW WenKai Mono",
+    // "LXGW WenKai Mono Lite",
     SFMono-Regular,
     Consolas,
     'Liberation Mono',

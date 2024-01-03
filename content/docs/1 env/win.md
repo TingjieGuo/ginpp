@@ -56,4 +56,4 @@ title: "- Windows环境配置"
     ppm install YAML-XS
     ppm install XML-LibXML
 
-在此期间请保证网络连接状态，安装成功或失败会有明显的提示信息。
+在此期间请保证网络连接状态，安装成功或失败会有明确的提示信息。
