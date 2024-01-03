@@ -11,8 +11,8 @@ GINPP是“**G**uide for **I**nstalling **N**ONMEM, **P**sN, and **P**irana”�
 ## **- 为什么建立网站**
 我最初写了一个幻灯片形式的PDF文档，只分享给了身边的人，后来经过种种途径有更多的人得到了这个文档，其中有些同学仍然遇到了问题联系过我。几年过去了，虽然这个领域在国内有越来越多的人加入，但中文资料还是非常少，考虑到NONMEM这个老古董安装起来确实不太简单，我决定做个正经的教程网站出来方便新人。网站的优势很明显，内容更新及分享都要比PDF好很多，加之捣鼓一些IT技术也是我的小爱好，GINPP官网正式诞生！
 
-## **- GINPP未来规划**
-GINPP最初只是单纯的安装NONMEM、PsN和Pirana教程，随着近年的新技术不断涌现，我会逐步把一些新的与定量药理学相关的技术、软件分享出来。
+<!-- ## **- GINPP未来规划**
+GINPP最初只是单纯的安装NONMEM、PsN和Pirana教程，随着近年的新技术不断涌现，我会逐步把一些新的与定量药理学相关的技术、软件分享出来。 -->
 
 ## **- 关于本站**
 本站使用[Hugo](https://gohugo.io/)编译，主题基于[Hugo Book](https://github.com/alex-shpak/hugo-book)，网站部署于[Cloudflare](https://www.cloudflare.com/)。

@@ -12,5 +12,5 @@ title: "- Perl-Speaks-NONMEM"
 
 ## 2. 高级配置
 {{< hint info >}}
-**Under construction...**  
+**WIP**  
 {{< /hint >}}

@@ -8,6 +8,6 @@ title: "[概要]"
 
 
 {{< hint info >}}
-**Under construction...**  
+**WIP**  
 {{< /hint >}}
 

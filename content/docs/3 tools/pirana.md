@@ -7,7 +7,7 @@ title: "- Pirana"
 
 ## 1. Pirana简介
 {{< hint info >}}
-**Under construction...**  
+**WIP**  
 {{< /hint >}}
 
 ## 2. Pirana安装及设置
