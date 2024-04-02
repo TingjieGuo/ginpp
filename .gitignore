@@ -1,17 +1,6 @@
-# IDE specific
-.idea/
-.vscode/
-resources/
-
-# Jupyter
-.ipynb_checkpoints/
-
-# Node
-node_modules/
-
-# Mac
-.DS_Store
-
-# R
-.Rproj.user
-.Rhistory
+.idea
+**/themes/
+exampleSite/public/
+exampleSite/resources/
+*.lock
+public
