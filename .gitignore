@@ -1,6 +1,27 @@
-.idea
-**/themes/
-exampleSite/public/
-exampleSite/resources/
+# IDE specific
+.idea/
+.vscode/
+resources/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Node
+node_modules/
+
+# Mac
+.DS_Store
+.Rproj.user
+
+# R
+.Rhistory
+
+# git
+# themes/
+
+# html
+content/**/*.html
+
+# hugo public
+public/
 *.lock
-public

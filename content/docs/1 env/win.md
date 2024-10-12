@@ -2,7 +2,9 @@
 weight: 1
 title: "- Windows环境配置"
 ---
-<font style="font-size:2em">Windows操作系统的环境配置</font>  
+<!-- <font style="font-size:2em">Windows操作系统的环境配置</font> -->
+
+# Windows操作系统的环境配置
 
 ## 1. 安装Fortran编译器
 &emsp;&emsp;所谓编译器，是指将高级语言翻译成计算机可直接解读和运行的“低级语言”。顾名思义，Fortran编译器是用来编译Fortran语言的程序。目前有许多不同版本的Fortran编译器，我个人比较推荐使用GCC，GCC是GNU Compiler Collection的缩写，它是由GNU计划推出的GNU编译器套件，其中编译Fortran的子程序名字叫GFortran。GCC是针对Linux和Unix系统开发的，而且每次的更新都只发布源代码，想要使用的话还需要经过编译，不过也无须担心，国外有很多组织发布了经过编译的版本，且适用于Windows系统。NONMEM 7.3的安装包里也附带GCC安装程序，版本为4.6.0，建议初学者直接使用。安装过程非常简单，按提示操作即可。

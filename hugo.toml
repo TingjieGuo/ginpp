@@ -1,17 +1,17 @@
-# hugo server --minify --themesDir ... --baseURL=http://0.0.0.0:1313/theme/hugo-book/
+# hugo server --minify --themesDir ../.. --baseURL=http://0.0.0.0:1313/theme/hugo-book/
 
 baseURL = 'https://ginpp.tingjieguo.com/'
 title = 'GINPP计划'
 theme = 'hugo-book'
 
-languageCode = "zh-cn"
-defaultContentLanguage = "cn"
+languageCode = 'zh-cn'
+defaultContentLanguage = 'cn'
 
 # Book configuration
 disablePathToLower = true
 enableGitInfo = true
 
-googleAnalytics = "UA-163338654-1"
+# googleAnalytics = "UA-163338654-1"
 # disqusShortname = "ginpp"
 
 # Needed for mermaid/katex shortcodes
@@ -26,60 +26,83 @@ googleAnalytics = "UA-163338654-1"
 # There are different options to translate files
 # See https://gohugo.io/content-management/multilingual/#translation-by-filename
 # And https://gohugo.io/content-management/multilingual/#translation-by-content-directory
+
+
 [languages]
 [languages.cn]
   languageName = 'Chinese'
   contentDir = 'content'
   weight = 1
 
+# [languages.en]
+#   languageName = 'English'
+#   contentDir = 'content.en'
+#   weight = 2
+
+# [languages.he]
+#   languageName = 'Hebrew'
+#   contentDir = 'content.he'
+#   languageDirection = 'rtl'
+#   weight = 3
+
 [menu]
 # [[menu.before]]
-#   name = "Github"
-#   url = "https://github.com/alex-shpak/hugo-book"
-#   weight = 10
+
 [[menu.after]]
-  name = "关于作者"
-  url = "https://tingjieguo.com/about"
+  name = '关于作者'
+  url = 'https://tingjieguo.com/about'
   weight = 10
 
 [params]
   description = 'NONMEM安装教程'
   keywords = "NONMEM,PsN,Pirana,安装,教程"
+  # (Optional, default light) Sets color theme: light, dark or auto.
+  # Theme 'auto' switches between dark and light modes based on browser/os preferences
+  BookTheme = 'light'
+
   # (Optional, default true) Controls table of contents visibility on right side of pages.
   # Start and end levels can be controlled with markup.tableOfContents setting.
   # You can also specify this parameter per page in front matter.
   BookToC = true
 
-  # (Optional, default none) Set the path to a logo for the book. If the logo is
-  # /static/logo.png then the path would be logo.png
+  # (Optional, default favicon.png) Set the path to a favicon file.
+  # If the favicon is /static/favicon.png then the path would be favicon.png
+  # BookFavicon = 'favicon.png'
+
+  # (Optional, default none) Set the path to a logo for the book.
+  # If the logo is /static/logo.png then the path would be logo.png
   BookLogo = 'favicon.png'
 
-  # (Optional, default none) Set leaf bundle to render as side menu
-  # When not specified file structure and weights will be used
-  # BookMenuBundle = '/menu'
-
-  # (Optional, default docs) Specify section of content to render as menu
-  # You can also set value to '*' to render all sections to menu
+  # (Optional, default docs) Specify root page to render child pages as menu.
+  # Page is resoled by .GetPage function: https://gohugo.io/functions/getpage/
+  # For backward compatibility you can set '*' to render all sections to menu. Acts same as '/'
   BookSection = 'docs'
 
   # Set source repository location.
   # Used for 'Last Modified' and 'Edit this page' links.
   BookRepo = 'https://github.com/tingjieguo/ginpp'
 
+  # (Optional, default 'commit') Specifies commit portion of the link to the page's last modified
+  # commit hash for 'doc' page type.
+  # Requires 'BookRepo' param.
+  # Value used to construct a URL consisting of BookRepo/BookCommitPath/<commit-hash>
+  # Github uses 'commit', Bitbucket uses 'commits'
+  BookCommitPath = 'commit'
+
   # Enable "Edit this page" links for 'doc' page type.
   # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
-  # Path must point to 'content' directory of repo.
-  # BookEditPath = 'edit/master/exampleSite/content'
+  # Edit path must point to root directory of repo.
+  # BookEditPath = 'edit/main/exampleSite'
 
   # Configure the date format used on the pages
   # - In git information
   # - In blog posts
-  BookDateFormat = 'Jan 2, 2006'
+  BookDateFormat = 'January 2, 2006'
 
   # (Optional, default true) Enables search function with flexsearch,
   # Index is built on fly, therefore it might slowdown your website.
   # Configuration for indexing can be adjusted in i18n folder per language.
-  BookSearch = true
+  BookSearch = false
 
   # (Optional, default true) Enables comments template on pages
   # By default partals/docs/comments.html includes Disqus template
@@ -92,3 +115,11 @@ googleAnalytics = "UA-163338654-1"
   # Portable links meant to work with text editors and let you write markdown without {{< relref >}} shortcode
   # Theme will print warning if page referenced in markdown does not exists.
   BookPortableLinks = false
+
+  # /!\ This is an experimental feature, might be removed or changed at any time
+  # (Optional, experimental, default false) Enables service worker that caches visited pages and resources for offline use.
+  BookServiceWorker = true
+
+  # /!\ This is an experimental feature, might be removed or changed at any time
+  # (Optional, experimental, default false) Enables a drop-down menu for translations only if a translation is present.
+  BookTranslatedOnly = false

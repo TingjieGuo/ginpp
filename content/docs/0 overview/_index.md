@@ -1,13 +1,6 @@
 ---
 weight: 1
 bookFlatSection: true
-title: "[概要]"
+title: "[背景科普]"
+bookHidden: false
 ---
-
-<font style="font-size:2em">概要</font>  
-
-
-{{< hint info >}}
-**WIP**  
-{{< /hint >}}
-
