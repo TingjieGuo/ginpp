@@ -11,7 +11,7 @@ title: "- Perl-Speaks-NONMEM"
 
 &emsp;&emsp;在安装过程中，根据提示输入`y`或`n`，然后回车，多数情况下输入`y`。若之前在计算机上安装过PsN，可能会提示询问是否保留原有的**psn.conf**文件，建议输入`n`，让程序新建一个**psn.conf**，这个文件里记录了一些配置信息，包括NONMEM版本、路径以及计算模型时的选项。安装程序会自动搜索NONMEM所在的路径，并自动设置好**psn.conf**，但之前也发现如果NONMEM装在比较深的目录下，PsN安装程序可能搜索不到，需要手动输入NONMEM的安装路径。这样PsN就安装好了，比较容易。
 
-## 2. 高级配置
-{{% hint danger %}}
+## 2. 进阶设置
+{{% hint info %}}
 **Work in progress**  
 {{% /hint %}}

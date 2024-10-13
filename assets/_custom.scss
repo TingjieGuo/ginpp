@@ -9,4 +9,8 @@ p {
 figure, figcaption>p {
     text-align: center;
 }
-// @import "plugins/numbered";
+
+.highlight code{
+    font-size: 0.75em;
+    text-wrap: wrap;
+}

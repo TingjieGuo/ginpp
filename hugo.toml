@@ -1,7 +1,7 @@
 # hugo server --minify --themesDir ../.. --baseURL=http://0.0.0.0:1313/theme/hugo-book/
 
 baseURL = 'https://ginpp.tingjieguo.com/'
-title = 'GINPP计划'
+title = 'MINGA'
 theme = 'hugo-book'
 
 languageCode = 'zh-cn'
@@ -21,6 +21,19 @@ enableGitInfo = true
 
 [markup.tableOfContents]
   startLevel = 1
+
+[markup.highlight]
+    guessSyntax = true
+    # hl_Lines = ''
+    # hl_inline = false
+    # lineAnchors = ''
+    # lineNoStart = 1
+    # lineNos = false
+    # lineNumbersInTable = true
+    # noClasses = true
+    # noHl = false
+    style = 'catppuccin-latte'
+    # tabWidth = 4
 
 # Multi-lingual mode config
 # There are different options to translate files
@@ -54,8 +67,8 @@ enableGitInfo = true
   weight = 10
 
 [params]
-  description = 'NONMEM安装教程'
-  keywords = "NONMEM,PsN,Pirana,安装,教程"
+  description = 'NONMEM安装教程 Make Installing NONMEM Great Again'
+  keywords = "NONMEM,PsN,Pirana,安装,教程,GINPP,MINGA"
   # (Optional, default light) Sets color theme: light, dark or auto.
   # Theme 'auto' switches between dark and light modes based on browser/os preferences
   BookTheme = 'light'
