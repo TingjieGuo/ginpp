@@ -17,7 +17,7 @@ node_modules/
 .Rhistory
 
 # git
-# themes/
+themes/
 
 # html
 content/**/*.html
