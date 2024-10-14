@@ -7,19 +7,24 @@ title: "- NONMEM的安装"
 
 <!-- 我在[这里](https://tingjieguo.com/posts/nmmac/)写了一个英文版的NONMEM在Mac上安装的非常简略的教程，会佛系完善并更新中文版... -->
 
-## 1. NONMEM安装源文件
+## 1. 安装源文件
 开始之前，我们简单认识一下NONMEM安装文件夹里的一些内容。
 
 {{< figure src="/docs/nonmem/img/content.png" caption="NONMEM7.4.4根目录*nm744CD*中的内容" width=450 >}}
 
 根目录下有许多文件名以**install**开头的文件，这些是我们安装NONMEM时需要直接运行的程序，不同文件对应不同的操作系统，对Windows而言，我们需要运行的是**SETUP74.bat**，如果是macOS, 我们需要运行的是**SETUP74**。**nonmem.lic**是NONMEM的授权文件，即使用许可，建议在安装NONMEM前先将授权文件拷贝至安装文件根目录下。**readme_XXX.pdf**是官方的说明文档。剩下的文件或文件夹中，除了前面已经说过的**compiler**文件夹外，其余的我们可以暂时先不管。
 
-## 2. 安装NONMEM的命令
+## 2. 安装命令
 下面你可以根据你所使用的系统参考相应的安装步骤。
 
 {{% tabs %}}
 
 {{% tab "Windows" %}}
+
+{{% hint warning %}}
+NONMEM针对Windows平台提供了一键式安装程序，安装后无须手动配置，后面的教程可跳过。你可以在[官方存档](https://nonmem.iconplc.com/)中获取此程序，文件名类似`NONMEM751_64gfortran463.exe`。
+{{% /hint %}} 
+
 第一步要做的还是打开`cmd`，这里建议启动`cmd`时右键选择“以管理员身份运行”。以管理身份打开`cmd`之后，首先需要进入NONMEM安装文件的根目录，假设NONMEM安装源文件根目录位于C盘的nm744文件夹下，则输入命令：
 
 ```
@@ -52,12 +57,13 @@ sudo /bin/bash SETUP74 ~/Downloads/nm744CD /opt/nm744 gfortran
 此时系统会提示输入你的账户密码（就是你的用户开机密码），注意此时屏幕上不会显示你所输入的内容，正常输入后按enter确认即可。
 
 macOS的安装命令相对复杂，`sudo`命令会将其后面所接的命令以管理员的身份运行，这个命令并非100%必需，但是保险起见，建议带着；`/bin/bash`的意思是运行在`/bin`目录下的`bash`这个程序，从而执行其后所指定的文件， 即`SETUP74`这个文件， `SETUP74`这个文件是NONMEM的安装程序脚本；接下来`~/Downloads/nm744CD`表示NONMEM安装文件根目录的地址，其中`~`表示当前用户的根目录，即`/Users/你的用户名/`；然后`/opt/nm744`表示想要将NONMEM安装的目标路径，可以根据需要修改；`gfortran`定义将要使用的Fortran编译器命令。这条命令省略了很多其他选项，细节可以参考**readme_XXX.pdf**文档。
-{{% /tab %}}
-{{% /tabs %}}
 
 {{% hint danger %}}
 安装过程如果遇到系统提示“install”不是来自Apple认证的开发者，这说明macOS的安全机制被触发了，此时你需要先[关闭macOS“门禁”]({{< relref "/docs/env/mac/#3-关闭macos门禁" >}})
 {{% /hint %}} 
+
+{{% /tab %}}
+{{% /tabs %}}
 
 执行成功后系统会提示类似下图的信息，最后一行的提示`Continue (y/n)? [y]`，直接enter确认即可。之后的过程就比较简单了，大多时间是在等待以及根据提示的默认选项按enter。
 

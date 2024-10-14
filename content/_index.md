@@ -5,15 +5,15 @@ bookToC: false
 BookComments: false
 ---
 
+## **MINGA（原GINPP）**
+MINGA是**M**ake **I**nstalling **N**ONMEM **G**reat **A**gain的首字母组合。如何装NONMEM®绝对称得上是对初学者的一大挑战，在本站你可以找到关于NONMEM及其相关工具安装、设置的教程，希望为你减少些许痛苦。
 
-# **MINGA:** **M**ake **I**nstalling **N**ONMEM® **G**reat **A**gain （原GINPP）
+本站前身为GINPP（**G**uide for **I**nstalling **N**ONMEM, **P**sN, and **P**irana）。过去经常帮助我身边的人装NONMEM®，最初我把安装过程总结成了一份PDF，后为更方便分享而改为教程网页，经过几次迭代最终变成现在的模样。
 
 ## **NONMEM**
-NONMEM，**N**onlinear **M**ixed **E**ffects **M**odeling，是一种通用的统计方法，目前主要应用于PK/PD数据分析。NONMEM®是一款应用NONMEM方法的计算机商业软件，目前由ICON公司开发维护。
+NONMEM，**N**onlinear **M**ixed **E**ffects **M**odeling，是一种泛用的统计建模方法，是混合模型在非线性系统中的应用，目前主要用于PK/PD数据分析。NONMEM®是一款商业软件，最初由UCSF的科研人员开发，后交由商业公司开发和维护至今。在版本迭代了近半个世纪后，NONMEM®至今依然高度保持着上世纪八十年代的程序设计风格。其主程序不支持可视化交互，用户必须以手搓古法冶炼模型。官方确有为其提供GUI（图形化用户界面）程序PDx-Pop，但是得加钱。
 
-NONMEM®是一款上古软件，它的核心代码来自1980年代，上古的用户体验在今日依然得到高度保留。一款主要用户为非程序员的软件，主程序不提供任何可视化用户交互，为其适配的图形化界面程序可以单独出售，每一位NONMEM®用户最终都会成为一名具备一身古法炼模型手艺的高手。
-
-在学生时代，刚刚接触定量药理学这个领域的我也要学习使用NONMEM®，然而我从未料到我的第一难竟然是如何把它成功装上。NONMEM®的官方文档晦涩难解，网上的资料又极度贫乏，中文资源在当时几乎为零，而我使用的是Mac电脑，更是难上加难。后经过不断探索后终于有所理解，发现受此困扰的人不在少数，于是最初我把安装过程总结成了一份PDF分享给我周围的人们。后为方便分享，我把原教程做成了网页的形式，经过几次迭代变成现在的模样，未来会根据需要更新完善。
+曾经学生时代的我，刚刚接触NONMEM®，如何把软件安装到我的Macbook上是我面对的第一道难关。网上关于NONMEM®的资料在当时相当匮乏（甚至今天也谈不上很丰富），中文资源更是几乎为零，然而官方文档语言拗口、晦涩难解，对新手极度不友好。
 
 ## **关于本站**
-MINGA是**M**ake **I**nstalling **N**ONMEM **G**reat **A**gain的首字母组合，这里你可以找到关于NONMEM及其相关工具安装、设置的教程。本站前身为GINPP（**G**uide for **I**nstalling **N**ONMEM, **P**sN, and **P**irana）。本站使用[Hugo](https://gohugo.io/)编译，主题基于[Hugo Book](https://github.com/alex-shpak/hugo-book)，网站部署于[Cloudflare](https://www.cloudflare.com/)。
+本站使用[Hugo](https://gohugo.io/)编译，主题基于[Hugo Book](https://github.com/alex-shpak/hugo-book)，网站部署于[Cloudflare](https://www.cloudflare.com/)。

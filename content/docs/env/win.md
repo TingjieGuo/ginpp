@@ -7,12 +7,18 @@ title: "- Windows环境配置"
 # Windows操作系统的环境配置
 
 ## 1. 安装Fortran编译器
-所谓编译器，是指将高级语言翻译成计算机可直接解读和运行的“低级语言”。顾名思义，Fortran编译器是用来编译Fortran语言的程序。目前有许多不同版本的Fortran编译器，我个人比较推荐使用GCC，GCC是GNU Compiler Collection的缩写，它是由GNU计划推出的GNU编译器套件，其中编译Fortran的子程序名字叫GFortran。GCC是针对Linux和Unix系统开发的，而且每次的更新都只发布源代码，想要使用的话还需要经过编译，不过也无须担心，国外有很多组织发布了经过编译的版本，且适用于Windows系统。NONMEM 7.3的安装包里也附带GCC安装程序，版本为4.6.0，建议初学者直接使用。安装过程非常简单，按提示操作即可。
+所谓编译器，是指将高级语言翻译成计算机可直接解读和运行的“低级语言”。顾名思义，Fortran编译器是用来编译Fortran语言的程序。Fortran编译器有许多选择，我个人比较推荐使用GCC，GCC是GNU Compiler Collection的缩写，它是由GNU计划推出的GNU编译器套件，其中编译Fortran的子程序名字叫GFortran。NONMEM在7.5版本之前安装包里会附带GCC 4.6.0的安装程序，可以直接直接使用。
 
 {{< figure src="/docs/nonmem/img/content.png" caption="NONMEM7.4.4自带的GCC默认路径为nm744CD/compilers/" width=450 >}}
 
-安装结束后，可以检查一下GCC安装是否正确。从Windows的开始菜单中启动命令提示行`cmd`，输入命令：`gfortran -v`，注意空格。如果安装正确的话会出现类似下面的返回信息。
+NONMEM从7.5版本开始不再附带GCC，可以从[NONMEM官方存档](https://nonmem.iconplc.com/#/compilers)中下载`gfortran-windows-460.exe`。
 
+安装过程很容易，按提示操作即可。安装结束后，`gcc`和`gfortran`这两个命令会自动添加到系统的环境变量中，我们在`cmd`中输入以下命令来确认GCC安装正确：
+
+```cmd
+gfortran -v
+````
+返回信息应与以下类似：
 ```dos
 ~ ❯ gfortran -v
 Using built-in specs.

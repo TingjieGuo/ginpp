@@ -3,7 +3,7 @@ weight: 2
 title: "- macOS环境配置"
 ---
 <!-- <font style="font-size:2em">macOS操作系统的环境配置</font>   -->
-{{% hint warning %}}
+{{% hint danger %}}
 此教程不适用macOS 10.14（Mojave）及之前的版本。  
 {{% /hint %}}
 # macOS操作系统的环境配置
