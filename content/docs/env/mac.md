@@ -7,7 +7,7 @@ title: "- macOS环境配置"
 此教程不适用macOS 10.14（Mojave）及之前的版本。  
 {{% /hint %}}
 # macOS操作系统的环境配置
-## 1. macOS开发者工具
+## 1. 安装macOS开发者工具
 ### 1.1 Xcode Command Line Tools
 Xcode Command Line Tools（简称CLT）是macOS的开发工具集，这其中的大部分工具我们都不会使用到，但却是成功配置NONMEM所必需的。macOS通常并不会预装CLT，因此我们需要手动安装它。你可以从[Apple开发者网站](https://developer.apple.com/download/)上下载CLT的安装包然后再进行本地安装，但我更推荐下面这种使用命令行的方式。
 
@@ -19,7 +19,7 @@ xcode-select --install
 
 此时系统应该会如图提示安装CLT, 选择Install安装即可。
 
-{{< figure src="/docs/env/img/clt.png" caption="test" width=450 >}}
+{{< figure src="/docs/env/img/clt.png" caption="" width=450 >}}
 
 安装过程结束之后，建议使用以下命令来确认CLT的是否成功安装：
 
@@ -42,8 +42,8 @@ CLT虽然已经包含了很多开发工具，但我们的核心需求Fortran编�
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-## 2. Fortran编译器安装及设置
-NONMEM兼容的Fortran编译器只有GNU Fortran（GFortran）和Intel Fortran，前者开源。因此我们这里将使用Homebrew安装GFortran。GFortran有多个版本，但并非所有版本都能成功运行NONMEM，特别是在ARM架构的Mac电脑上，GFotran的最高版本不能超过11。截至2024年10月，以下配置已测试成功。
+## 2. 安装Fortran编译器
+NONMEM兼容的Fortran编译器只有GNU Fortran（GFortran）和Intel Fortran，前者开源。因此我们这里将使用Homebrew安装GFortran。GFortran有多个版本，但并非所有版本都能成功运行NONMEM，特别是在ARM架构的Mac电脑上，GFortran的最高版本不能超过11。截至2024年10月，以下配置已测试成功。
 |             设备                    | macOS 版本    | GFortran 版本       | NONMEM 版本     |
 |:-----------------------------------:|:------------:|:------------------:|:--------------:|
 | Macbook Pro (13-inch, M1, 2020)     |   Big Sur    |     10.2 (x86)     |     7.5.1      |
@@ -120,13 +120,22 @@ which gfortran
 {{% /tab %}}
 {{% /tabs %}}
 
-以上方法二选其一即可，至此NONMEM安装所需要的所有系统设置就都已经完成了，如果你不需要使用[PsN]({{< relref "/docs/tools/psn" >}})的话，可以直接进行NONMEM的安装[NONMEM的安装]({{< relref "/docs/nonmem/nm-install" >}})。
+以上方法二选其一即可，至此NONMEM安装所需要的所有系统设置就都已经完成了。
 
-## 3. Perl安装及设置
-{{% hint info %}}
-**Work in progress**  
-{{% /hint %}}
-### 3.1 安装Perl解释器
-### 3.2 安装Perl模块
+## 3. 关闭macOS“门禁”
+macOS有一套叫作“门禁”（Gatekeeper）的安全系统，用来检查用户想要运行的程序是否属于Apple认证的开发者。由于NONMEM安装程序未经过Apple认证，“门禁”系统会在NONMEM安装过程中触发，导致安装失败。我们接下来可以临时关闭这套系统。
+
+打开`Terminal.app`，输入以下命令：
+```zsh
+sudo spctl --global-disable
+```
+然后打开macOS的系统设置菜单，找到隐私与安全选项，其中“安全”选项下面有一项“Allow applications downloaded from”的设置，如下图所示：
+
+{{< figure src="/docs/env/img/gatekeeper.png" caption="最后一项“Anywhere”在关闭“门禁”后才会显示" width=450 >}}
+
+在执行过上面的命令后，此时应该会看到系统已经选择了“Anywhere”，这样后面安装NONMEM就不会出现问题了。完成NONMEM安装之后，我们可以回到这里，选择“App Store and identified developers”，或者可以使用以下命令再开启“门禁”系统：
+```zsh
+sudo spctl --global-enable
+```
 
 
