@@ -5,8 +5,6 @@ title: "- NONMEM的安装"
 <!-- <font style="font-size:2em">NONMEM的安装</font> -->
 # NONMEM的安装
 
-<!-- 我在[这里](https://tingjieguo.com/posts/nmmac/)写了一个英文版的NONMEM在Mac上安装的非常简略的教程，会佛系完善并更新中文版... -->
-
 ## 1. 安装源文件
 开始之前，我们简单认识一下NONMEM安装文件夹里的一些内容。
 
@@ -22,7 +20,7 @@ title: "- NONMEM的安装"
 {{% tab "Windows" %}}
 
 {{% hint warning %}}
-NONMEM针对Windows平台提供了一键式安装程序，安装后无须手动配置，后面的教程可跳过。你可以在[官方存档](https://nonmem.iconplc.com/)中获取此程序，文件名类似`NONMEM751_64gfortran463.exe`。
+NONMEM针对Windows平台提供了一键式安装程序，安装后无须手动配置，本页面所有教程步骤均可跳过。你可以从官方存档`https://nonmem.iconplc.com/#/nonmem751`（此链接需手动复制粘贴到浏览器地址栏中）下载此程序，文件名类似`NONMEM751_64gfortran463.exe`。
 {{% /hint %}} 
 
 第一步要做的还是打开`cmd`，这里建议启动`cmd`时右键选择“以管理员身份运行”。以管理身份打开`cmd`之后，首先需要进入NONMEM安装文件的根目录，假设NONMEM安装源文件根目录位于C盘的nm744文件夹下，则输入命令：

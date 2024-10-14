@@ -11,7 +11,7 @@ title: "- Windows环境配置"
 
 {{< figure src="/docs/nonmem/img/content.png" caption="NONMEM7.4.4自带的GCC默认路径为nm744CD/compilers/" width=450 >}}
 
-NONMEM从7.5版本开始不再附带GCC，可以从[NONMEM官方存档](https://nonmem.iconplc.com/#/compilers)中下载`gfortran-windows-460.exe`。
+NONMEM从7.5版本开始不再附带GCC，可以从NONMEM官方存档`https://nonmem.iconplc.com/#/compilers`（此链接需手动复制粘贴到浏览器地址栏中）中下载`gfortran-windows-460.exe`。
 
 安装过程很容易，按提示操作即可。安装结束后，`gcc`和`gfortran`这两个命令会自动添加到系统的环境变量中，我们在`cmd`中输入以下命令来确认GCC安装正确：
 

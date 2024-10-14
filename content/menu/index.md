@@ -1,5 +1,8 @@
 ---
-headless: true
+weight: 5
+headless: false
+# menu: after
+# title: menu
 ---
 <br />
 
@@ -16,11 +19,3 @@ headless: true
   - [1. Perl-Speaks-NONMEM]({{< relref "/docs/tools/psn" >}})
   - [2. Pirana]({{< relref "/docs/tools/pirana" >}})
 <br />
-
-<!-- - [Buttons]({{< relref "/docs/tools/buttons" >}})
-- [Columns]({{< relref "/docs/tools/columns" >}})
-- [Expand]({{< relref "/docs/tools/expand" >}})
-- [Hints]({{< relref "/docs/tools/hints" >}})
-- [Katex]({{< relref "/docs/tools/katex" >}})
-- [Mermaid]({{< relref "/docs/tools/mermaid" >}})
-- [Tabs]({{< relref "/docs/tools/tabs" >}}) -->

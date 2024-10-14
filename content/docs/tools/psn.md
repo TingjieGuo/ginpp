@@ -9,7 +9,7 @@ title: "- PsN"
 PsN官方为Windows用户提供了预先配置好的下载包，安装相对简单，具体过程如下：
 
 1. 在[PsN项目官网](https://uupharmacometrics.github.io/PsN/download.html)下载`PsN-5.4.0-windows-64bit.zip`并将其解压缩。
-2. 更新系统环境变量，将`PsN-5.4.0\strawberry\perl\bin`添加至PATH变量中。
+2. 打开系统环境变量设置，将`PsN-5.4.0\strawberry\perl\bin`添加至PATH变量中。
 3. 在`PsN-5.4.0\strawberry\perl\site\lib\PsN_5_4_0\psn.conf`文件中的[nm_versions]设置中添加安装好的NONMEM根目录，例如`default=C:\nm751,7.5.1`。
 
 上述安装过程以PsN 5.4.0版本为例，安装设置时注意修改为你所下载的版本号。
