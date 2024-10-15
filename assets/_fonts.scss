@@ -1,13 +1,19 @@
-// @import url(https://cdn.jsdelivr.net/gh/tingjieguo/LxgwBrightCodeGB-webfont/style.css);
-// @import url(https://raw.githubusercontent.com/TingjieGuo/LxgwBrightCodeGB-webfont/refs/heads/main/style.css);
 @import url(https://cdn.jsdelivr.net/gh/tingjieguo/lxgw-bright-webfont/style.css);
+@import url(https://cdn.jsdelivr.net/gh/tingjieguo/lxgw-bright-webfont/styleGB.css);
+@import url(https://cdn.jsdelivr.net/gh/tingjieguo/lxgw-bright-webfont/styleTC.css);
+// @import url(https://raw.githubusercontent.com/TingjieGuo/LxgwBrightCodeGB-webfont/refs/heads/main/style.css);
+// @import url(https://raw.githubusercontent.com/TingjieGuo/LxgwBrightCodeGB-webfont/refs/heads/main/styleGB.css);
+// @import url(https://raw.githubusercontent.com/TingjieGuo/LxgwBrightCodeGB-webfont/refs/heads/main/styleTC.css);
+
 // @import url(https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont/style.css);
 // @import url(https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont/style.css);
 // @import url(https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont/style.css);
 
 body {
   font-family:
+    "LXGW Bright GB",
     "LXGW Bright",
+    "LXGW Bright TC",
     // "LXGW WenKai",
     // "LXGW WenKai Lite",
     -apple-system,
