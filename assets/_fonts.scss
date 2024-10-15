@@ -1,3 +1,5 @@
+// @import url(https://cdn.jsdelivr.net/gh/tingjieguo/LxgwBrightCodeGB-webfont/style.css);
+// @import url(https://raw.githubusercontent.com/TingjieGuo/LxgwBrightCodeGB-webfont/refs/heads/main/style.css);
 @import url(https://cdn.jsdelivr.net/gh/tingjieguo/lxgw-bright-webfont/style.css);
 // @import url(https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont/style.css);
 // @import url(https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont/style.css);
@@ -17,14 +19,15 @@ body {
     sans-serif;
 }
 
-// code {
-//   font-family:
-//     // "LXGW WenKai Mono",
-//     // "LXGW WenKai Mono Lite",
-//     SFMono-Regular,
-//     Consolas,
-//     'Liberation Mono',
-//     Menlo,
-//     'Roboto Mono',
-//     monospace;
-// }
+code {
+  font-family:
+    // "LXGW Bright Code GB",
+    // "LXGW WenKai Mono",
+    // "LXGW WenKai Mono Lite",
+    SFMono-Regular,
+    Consolas,
+    'Liberation Mono',
+    Menlo,
+    'Roboto Mono',
+    monospace;
+}
