@@ -9,10 +9,15 @@
 // @import url(https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont/style.css);
 // @import url(https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont/style.css);
 
+// @font-face {
+//   font-family: 'LXGW Bright GB';
+//   unicode-range: U+4E00-9FFF; // limit to Chinese characters only
+// }
+
 body {
   font-family:
     "LXGW Bright GB",
-    "LXGW Bright",
+    // "LXGW Bright",
     "LXGW Bright TC",
     // "LXGW WenKai",
     // "LXGW WenKai Lite",
