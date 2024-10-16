@@ -1,26 +1,19 @@
+@import url(https://lxgw-bright-webfont.pages.dev/style.css);
 @import url(https://cdn.jsdelivr.net/gh/tingjieguo/lxgw-bright-webfont/style.css);
-@import url(https://cdn.jsdelivr.net/gh/tingjieguo/lxgw-bright-webfont/styleGB.css);
-@import url(https://cdn.jsdelivr.net/gh/tingjieguo/lxgw-bright-webfont/styleTC.css);
-// @import url(https://raw.githubusercontent.com/TingjieGuo/LxgwBrightCodeGB-webfont/refs/heads/main/style.css);
-// @import url(https://raw.githubusercontent.com/TingjieGuo/LxgwBrightCodeGB-webfont/refs/heads/main/styleGB.css);
-// @import url(https://raw.githubusercontent.com/TingjieGuo/LxgwBrightCodeGB-webfont/refs/heads/main/styleTC.css);
-
-// @import url(https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont/style.css);
-// @import url(https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont/style.css);
-// @import url(https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont/style.css);
+@import url(https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont/style.css);
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 // @font-face {
-//   font-family: 'LXGW Bright GB';
+//   font-family: 'LXGW Wenkai';
 //   unicode-range: U+4E00-9FFF; // limit to Chinese characters only
 // }
 
 body {
   font-family:
+    "Ysabeau Infant",
     "LXGW Bright GB",
-    // "LXGW Bright",
-    "LXGW Bright TC",
-    // "LXGW WenKai",
-    // "LXGW WenKai Lite",
+    "LXGW Wenkai",
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
@@ -32,13 +25,10 @@ body {
 
 code {
   font-family:
-    // "LXGW Bright Code GB",
-    // "LXGW WenKai Mono",
-    // "LXGW WenKai Mono Lite",
+    'Roboto Mono',
     SFMono-Regular,
     Consolas,
     'Liberation Mono',
     Menlo,
-    'Roboto Mono',
     monospace;
 }
