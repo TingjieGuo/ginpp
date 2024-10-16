@@ -7,6 +7,10 @@ title: "- macOS环境配置"
 {{% hint danger %}}
 此教程不适用macOS 10.14（Mojave）及之前的版本。  
 {{% /hint %}}
+
+{{% hint info %}}
+如果你只想能用NONMEM，不在乎原理，这里有一个精简版的安装步骤[How to install NONMEM on macOS](https://tingjieguo.com/posts/nmmac/)。
+{{% /hint %}}
 # macOS操作系统的环境配置
 ## 1. 安装macOS开发者工具
 ### 1.1 Xcode Command Line Tools
