@@ -11,7 +11,7 @@ title: "- macOS环境配置"
 {{% hint info %}}
 如果你只想能用NONMEM，不在乎原理，这里有一个精简版的安装步骤[How to install NONMEM on macOS](https://tingjieguo.com/posts/nmmac/)。
 {{% /hint %}}
-# macOS操作系统的环境配置
+# macOS系统环境配置
 ## 1. 安装macOS开发者工具
 ### 1.1 Xcode Command Line Tools
 Xcode Command Line Tools（简称CLT）是macOS的开发工具集，这其中的大部分工具我们都不会使用到，但却是成功配置NONMEM所必需的。macOS通常并不会预装CLT，因此我们需要手动安装它。你可以从[Apple开发者网站](https://developer.apple.com/download/)上下载CLT的安装包然后再进行本地安装，但我更推荐下面这种使用命令行的方式。
